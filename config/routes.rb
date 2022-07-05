@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :sightings
   get '/sightings/flower/:flower_id', to: 'sightings#get_by_flower'
 
+  resources :likes
 end
