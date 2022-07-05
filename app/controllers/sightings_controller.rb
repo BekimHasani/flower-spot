@@ -17,7 +17,7 @@ class SightingsController < ApplicationController
   end
 
   def destroy
-    if !@sighting.destroy
+    if @sighting.destroy
       render json: @sighting, status: :ok
     else
       render json: { errors: @sighting.errors.full_messages },
