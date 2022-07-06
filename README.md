@@ -17,8 +17,12 @@ Things you may want to cover:
   gem 'whenever',
  
 * Configuration::
-  Run => 'bundle install' in the app root to install all required dependecies in order to run the application.
   rails active_storage:install
+  Run => 'bundle install' in the app root to install all required dependecies in order to run the application.
+  
+* to run the application::
+  'rails s' to start the applications 
+  'sidekiq' to start the sidekiq server 
 
 * Database creation::
   rake db:migrate
