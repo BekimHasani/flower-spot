@@ -123,7 +123,7 @@ RSpec.describe SightingsController, type: :controller do
 
       body = JSON.parse(response.body)
       expect(response).to have_http_status(412)
-      expect(body['errors'][0]).to eq("A sight can be destroyed only by the owner!")
+      expect(body['errors'][0]).to eq("A sighting can be destroyed only by the owner!")
     end
   end
 end
