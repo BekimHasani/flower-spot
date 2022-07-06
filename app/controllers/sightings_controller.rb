@@ -1,3 +1,4 @@
+
 class SightingsController < ApplicationController
   skip_before_action :authenticate_request, only: [:get_by_flower]
   before_action :set_sighting, only: [:destroy]

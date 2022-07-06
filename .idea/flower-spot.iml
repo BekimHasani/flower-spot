@@ -39,12 +39,14 @@
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v6.0.5, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activestorage (v6.0.5, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v6.0.5, RVM: ruby-2.7.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.12, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.18, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.12.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.3.9, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v11.1.3, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="chronic (v0.10.2, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.10, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="connection_pool (v2.2.5, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, RVM: ruby-2.7.5) [gem]" level="application" />
@@ -53,7 +55,7 @@
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.15.5, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.0.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.10.0, RVM: ruby-2.7.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="jwt (v2.2.1, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jwt (v2.4.1, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.7.1, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.18.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.7.1, RVM: ruby-2.7.5) [gem]" level="application" />
@@ -81,6 +83,13 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.11.1, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v5.1.2, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.11.0, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="redis (v4.7.1, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.11.0, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.11.0, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.11.1, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v5.1.2, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.11.0, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sidekiq (v6.5.1, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v2.1.1, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring-watcher-listen (v2.0.1, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.1.1, RVM: ruby-2.7.5) [gem]" level="application" />
@@ -90,6 +99,7 @@
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.9, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.5, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.5, RVM: ruby-2.7.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="whenever (v1.0.0, RVM: ruby-2.7.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="zeitwerk (v2.6.0, RVM: ruby-2.7.5) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
@@ -363,6 +373,11 @@
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl description="Prints out your Rack middleware stack" fullCommand="middleware" id="middleware" />
+          <RakeTaskImpl id="questions">
+            <subtasks>
+              <RakeTaskImpl description="TODO" fullCommand="questions:set_question" id="set_question" />
+            </subtasks>
+          </RakeTaskImpl>
           <RakeTaskImpl description="Restart app by touching tmp/restart.txt" fullCommand="restart" id="restart" />
           <RakeTaskImpl description="Generate a cryptographically secure secret key (this is typically used to generate a secret for cookie sessions)" fullCommand="secret" id="secret" />
           <RakeTaskImpl description="Run all specs in spec directory (excluding plugin specs)" fullCommand="spec" id="spec" />

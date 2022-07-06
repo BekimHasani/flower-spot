@@ -12,7 +12,7 @@ class Sighting < ApplicationRecord
 
   def is_the_owner?
     return if self.user_id == Current.user[:id]
-    errors[:base] << "A sight can be destroyed only by the owner!"
+    errors[:base] << "A sighting can be destroyed only by the owner!"
     throw :abort
   end
 end
