@@ -1,47 +1,50 @@
 # README
 
 Things you may want to cover:
+**All the commnads should be run under the app root tree**
 
 * Version::
   ruby version 2.7.5,
   rails version 6.0.5,
   
   
-* System dependencies::
-  gem 'rspec-rails',
-  gem 'factory_bot_rails',
-  gem 'jwt',
-  gem 'bcrypt',
-  gem 'pg',
-  gem 'sidekiq',
-  gem 'whenever',
+* System dependencies<br>
+  gem 'rspec-rails',<br>
+  gem 'factory_bot_rails',<br>
+  gem 'jwt',<br>
+  gem 'bcrypt',<br>
+  gem 'pg',<br>
+  gem 'sidekiq',<br>
+  gem 'whenever',<br><br>
  
-* Configuration::
-  rails active_storage:install
-  Run => 'bundle install' in the app root to install all required dependecies in order to run the application.
+* Configuration<br>
+  run 'rails active_storage:install'<br>
+  run 'bundle install' in the app root to install all required dependecies in order to run the application.<br>
+  run 'whenever --update-crontab'<br>
+  run 'rake db:seed'<br>
+  run 'rake db:migrate'<br><br>
   
-* to run the application::
-  'rails s' to start the applications 
-  'sidekiq' to start the sidekiq server 
+* Application run<br>
+  'rails s' to start the applications <br>
 
-* public api
-  POST http://localhost:3000/users required params: email, username, password
-  POST http://localhost:3000/auth/login required params: email, password
-  GET  http://localhost:3000/flowers
-  GET http://localhost:3000/sights
-  GET http://localhost:3000/sightings/flower/:id
+* Database creation<br>
+  run 'rake db:migrate'<br>
+
+* How to run the test suite<br>
+  run 'bundle exec rspec'<br>
   
-* authorized apis
-  POST http://localhost:3000/sightings required params: longitude, latitude, user_id, flower_id,
-  POST http://localhost:3000/likes required params: user_id, flower_id,
-  DELETE http://localhost:3000/sightings/:id
-  DELETE http://localhost:3000/likes/:id
-
-* Database creation::
-  rake db:migrate
-
-* How to run the test suite::
-  all at once => 'bundle exec rspec'
+* Services (job queues, cache servers)<br>
+  Redis via sidekiq for storing jobs<br>
   
-* Services (job queues, cache servers)::
-  Redis via sidekiq 
+* Public api<br>
+  POST http://localhost:3000/users required params: email, username, password<br>
+  POST http://localhost:3000/auth/login required params: email, password<br>
+  GET  http://localhost:3000/flowers<br>
+  GET http://localhost:3000/sights<br>
+  GET http://localhost:3000/sightings/flower/:id<br>
+  
+* authorized apis<br>
+  POST http://localhost:3000/sightings required params: longitude, latitude, user_id, flower_id,<br>
+  POST http://localhost:3000/likes required params: user_id, flower_id,<br>
+  DELETE http://localhost:3000/sightings/:id<br>
+  DELETE http://localhost:3000/likes/:id<br>
