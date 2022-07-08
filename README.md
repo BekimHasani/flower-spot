@@ -1,7 +1,7 @@
 # README
 
 Things you may want to cover:
-**All the commnads should be run under the app root tree**
+**All the commands should be run under the app root tree**
 
 * Version::
   ruby version 2.7.5,
@@ -19,8 +19,8 @@ Things you may want to cover:
  
 * Configuration<br>
   run 'rails active_storage:install'<br>
-  run 'bundle install' in the app root to install all required dependecies in order to run the application.<br>
-  run 'whenever --update-crontab'<br>
+  run 'bundle install' in the app root to install all required dependencies in order to run the application.<br>
+  run 'whenever --update-crontab' #if job doesn't get executed check you cron configuration in machine '<br>
   run 'rake db:seed'<br>
   run 'rake db:migrate'<br><br>
   
