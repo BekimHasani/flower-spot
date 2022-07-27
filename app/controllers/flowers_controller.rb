@@ -3,7 +3,7 @@ class FlowersController < ApplicationController
 
   def index
     @flowers = Flower.all
-    render json: @flowers, status: :ok
+    render json: @flowers.map { |flower| flower.as_json.merge(image: url_for(flower.image))}, status: :ok
   end
 
   private

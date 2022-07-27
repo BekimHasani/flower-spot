@@ -7,6 +7,8 @@ class Sighting < ApplicationRecord
   validates :latitude, presence: true
 
   before_destroy :is_the_owner?
+  # after_create_commit :do_something
+  # after_commit :do_something, :on => :create
 
   private
 
